@@ -1,0 +1,81 @@
+html {
+  font-family: "Open Sans";
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1559311648-874c28a0b7c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1931&q=80) no-repeat center;
+    background-size: cover;
+}
+
+h1, p {
+  text-align: center;
+  color: #30475e;
+  scale: 1.2;
+}
+
+form {
+  background-color: #fff3e255;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 5vh auto;
+  padding: 3vw;
+}
+
+label {
+  margin: 1vh 0;
+  font-weight: 600;
+  color: #30475e;
+}
+
+input, select {
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+#recommend {
+  margin: 1vh 0;
+}
+
+.radio-inputs {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.radio-inputs input {
+  margin-left: 2vw;
+}
+
+.checkbox-options {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0 2vw;
+  margin: 0;
+}
+
+textarea {
+  font-family: "Open Sans";
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1vh 0;
+}
+
+button {
+  background-color: #5aa469;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1vh 0;
+  box-shadow: 1px 2px 5px grey;
+}
+
+button:hover {
+  background-color: #5aa469BB;
+  cursor: pointer;
+}
