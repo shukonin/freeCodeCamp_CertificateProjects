@@ -1,5 +1,5 @@
 body {
-  font-family:"Open Sans";
+  font-family: 'Open Sans';
   margin: 0;
 }
 
@@ -8,15 +8,16 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 15vw;
+  padding: 0 15vw;
   display: flex;
   justify-content: space-between;
   justify-self: center;
-  backgroung-color: white;
+  background-color: lightgrey;
+  z-index: 1;
 }
 
 #header figure {
-  width: 4vw;
+  width: 3rem;
   margin: 0;
   margin-left: 4vw;
 }
@@ -45,9 +46,166 @@ body {
 }
 
 main {
-  margin: 8rem 15vw;
+  margin: 8rem 15vw 1rem;
 }
 
-h1, p {
+#title,
+#subtitle {
   text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+  font-family: 'Open Sans';
+  margin-bottom: 1rem;
+}
+
+#submit {
+  background-color: yellow;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px 1px black;
+  margin-bottom: 3rem;
+}
+
+#features {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  margin: 3vh 0;
+}
+
+.feature-card {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.feature-img {
+  display: flex;
+  width: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-img img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.feature-name {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.feature-description {
+  text-align: center;
+  margin-top: 0.5rem;
+  scale: 0.8;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+  width: 40vw;
+  height: calc(40vw * 0.5625);
+}
+
+#pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.price-tag {
+  border: 1px solid black;
+  margin: 2rem 0;
+}
+
+.price-tag__plan {
+  background-color: lightgray;
+  margin: 0;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.price-tag__price {
+  width: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price-tag__duration {
+  text-align: center;
+}
+
+.price-tag__button {
+  background-color: yellow;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 0.5rem 3rem;
+}
+
+footer {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 15vw;
+}
+
+#footer-options {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.footer__option {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.footer__option:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#copyright {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  #header,
+  footer {
+    padding: 0 2rem;
+  }
+
+  main {
+    margin: 8rem 5vw 1rem;
+  }
+
+  #video {
+    width: 80vw;
+    height: calc(80vw * 0.5625);
+  }
+
+  #pricing {
+    grid-template-columns: 1fr;
+  }
 }
