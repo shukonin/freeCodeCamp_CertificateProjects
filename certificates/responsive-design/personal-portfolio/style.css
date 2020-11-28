@@ -55,16 +55,106 @@ body {
   font-weight: lighter;
 }
 
-#projects {
-  background-color: #45567d;
-  padding: 2rem;
-}
-
-#projects h2 {
+#projects-title {
   text-align: center;
   color: white;
   font-size: 2rem;
-  border-bottom: 2px solid white;
-  margin: 0 20rem 3rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  margin: 0;
+  background-color: #45567d;
+}
+
+#projects {
+  background-color: #45567d;
+  padding: 2rem 25%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px 0.5px black;
+}
+
+.project-tile a {
+  text-decoration: none;
+}
+
+.project-type {
+  color: black;
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.project-tile span {
+  color: transparent;
+  transition: color ease-in 500ms;
+}
+
+.project-tile:hover span {
+  color: orange;
+}
+
+.project-name {
+  color: white;
+  background-color: #303841;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+
+#contact {
+  background-color: #303841;
+  padding: 4rem 2rem;
+}
+
+#contact h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+}
+
+#contact > p {
+  color: white;
+  text-align: center;
+}
+
+.social-container {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  color: black;
+  text-decoration: none;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  transition: margin-top 1s;
+}
+
+.social-media:hover {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.social-media img {
+  height: 2rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1060px) {
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
