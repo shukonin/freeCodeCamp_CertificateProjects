@@ -1,0 +1,60 @@
+body {
+  font-family: 'Open Sans';
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 0;
+}
+
+#navbar {
+  position: sticky;
+  height: 100vh;
+  overflow-y: scroll;
+  top: 0;
+  padding: 0;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  padding: 1rem 1rem;
+  border: 1px solid gray;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: slategray;
+}
+
+#main-doc {
+  margin: 1rem 3rem;
+}
+
+.main-section {
+  margin-top: 2rem;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: darkslategray;
+  border-bottom: 1px solid lightslategray;
+}
+
+.code-container {
+  background-color: #00000008;
+  padding: 1rem 1rem;
+}
